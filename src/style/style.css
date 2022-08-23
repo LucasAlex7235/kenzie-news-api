@@ -113,7 +113,9 @@
     gap: 2px;
 }
 
-.cards article .news {}
+.cards article .news {
+    margin-bottom: 10px;
+}
 
 .cards article .news span {
     font-size: 0.80em;
