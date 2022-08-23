@@ -107,16 +107,10 @@
     display: none;
 }
 
-.cards figure figcaption {
-    font-size: 0.62em;
-    position: relative;
-    bottom: -126px;
-}
-
 .cards article {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 2px;
 }
 
 .cards article .news {}
@@ -135,12 +129,19 @@
     font-size: 1em;
     font-weight: 500;
     color: var(--blue);
+    margin-bottom: 5px;
 }
 
-.cards article .content {}
+.cards article .content {
+    height: 46%;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+}
 
 .cards article .content p {
     font-size: 0.75em;
+    margin-bottom: 8px;
 }
 
 footer {
@@ -157,24 +158,6 @@ footer p {
     font-size: .75em;
 }
 
-
-@media (min-width: 407px) {
-    .cards figure figcaption {
-        bottom: -122px;
-    }
-}
-
-@media (min-width: 458px) {
-    .cards figure figcaption {
-        bottom: -112px;
-    }
-}
-
-@media (min-width: 482px) {
-    .cards figure figcaption {
-        bottom: -102px;
-    }
-}
 
 @media (min-width: 1024px) {
     .container--title {
@@ -235,7 +218,8 @@ footer p {
         left: -579px;
         top: 57px;
     }
-    .container--vitrine{
+
+    .container--vitrine {
         flex-direction: row;
         flex-wrap: wrap;
         width: 90vw;
@@ -254,12 +238,9 @@ footer p {
         width: 180px;
         object-fit: cover;
     }
-    .cards article{
+
+    .cards article {
         padding: 16px 16px 0;
     }
-    .cards figure figcaption{
-        position: relative;
-        top: -14px;
-        left: 196px;
-    }
+
 }
