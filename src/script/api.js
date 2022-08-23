@@ -51,7 +51,7 @@ class Cards {
             vitrine.append(cardsLi)
         }
     }
-}
+} 
 
 Cards.criarCards()
 Cards.listarCards()
